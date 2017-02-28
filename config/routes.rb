@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   
+  get    'checkin'   => 'checkin#index'
+  
   resources :schools
 
   # The priority is based upon order of creation: first created -> highest priority.
